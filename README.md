@@ -11,6 +11,9 @@ A bare-bones framework for Craft, for a quicker start to templating.
 - Basic CSS, including normalize
 - Modular SCSS files for basic CSS
 - Config file for CSS preprocessor, built with CodeKit in mind
+- General configuration file for come basic settings in Craft
+- A gitignore file, for those pesky .DS_Store files
+
 
 ## Installation
 
