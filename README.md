@@ -1,5 +1,13 @@
 # Craft Basic Template
-A bare-bones framework for Craft, for a quicker start to templates.
+A bare-bones framework for Craft, for a quicker start to templating.
+
+## What's included?
+
+- Home page: /craft/templates/index.html
+- News listing page: /craft/templates/news/index.html
+- News entry page: /craft/templates/news/_entry.html
+- Simple page: /craft/templates/simple.html
+- Error 404 page: /craft/templates/404.html
 
 ## Installation
 
