@@ -1,0 +1,36 @@
+//======================================
+// STATAMIC.SCSS
+//======================================
+
+// ==========================
+// COMPASS, VARIABLES, MIXINS
+// ==========================
+@import "compass";
+@import "variables";
+@import "mixins";
+
+// ==========================
+// PLACEHOLDERS - FOR @EXTEND
+// ==========================
+@import "placeholders";
+
+// =================
+// CSS RESET
+// =================
+@import "normalize";
+@import "normalize-opentype";
+
+// =================
+// BASE RULES
+// =================
+@import "base";
+
+// =================
+// LAYOUT RULES
+// =================
+@import "layout";
+
+// =================
+// MODULE RULES
+// =================
+@import "modules";

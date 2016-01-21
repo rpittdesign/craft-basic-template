@@ -1,0 +1,29 @@
+// ===============================================
+// All variables to be used in your theme go here. 
+// ===============================================
+
+// ===================
+// COLOURS
+// ===================
+
+// greyscale
+
+$black: #000000;
+$white: #FFFFFF;
+
+// site colours
+
+$maincolor: #0000FF;
+$compcolor: #FF0000;
+
+// links
+
+$normal: $maincolor;
+$hover: $compcolor;
+$active: $compcolor;
+$visited: $maincolor;
+$focus: $compcolor;
+
+// fonts
+
+$body: Helvetica, Arial, sans-serif;

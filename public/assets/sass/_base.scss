@@ -1,0 +1,126 @@
+// =====================================
+// BASE RULES
+// =====================================
+
+
+// A Base rule is applied to an element using an element selector, a descendent selector,
+// or a child selector, along with any pseudo-classes.
+// It doesn't include any class or ID selectors.
+// It is defining the default styling for how that element should look in all occurrences on the page.
+
+::selection {
+  background: $black;
+  color: $white;
+}
+
+// Typography
+
+html {
+}
+
+body {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: $body;
+  @include font-smoothing(on);
+}
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+}
+h1 {
+  
+}
+h2 {
+
+}
+h3 {
+  
+}
+h4 {
+  
+}
+h5 {
+  
+}
+h6 {
+  
+}
+b, strong {
+  
+}
+i, em {
+  
+}
+hr {
+  
+}
+p, ul, ol, hr, table, form, fieldset {
+
+}
+li {
+}
+blockquote {
+  
+}
+
+figcaption {
+
+}
+
+time {}
+
+img {
+  max-width: 100%;
+}
+
+// Links
+
+a {
+  @include link-colors($normal, $hover, $active, $visited, $focus);
+}
+
+// Forms
+
+form {}
+label {}
+
+input[type],
+textarea {
+  outline: none;
+}
+
+// Tables
+
+table {
+  width: 100%;
+  border: 0.1em solid $black;
+
+  caption { font-weight: bold; padding: 0.5em 0; }
+  thead {
+    color: $white;
+    text-align: left;
+    text-align: center;
+    background-color: $black;
+
+    th { border-color: lighten($black, 10%); }
+  }
+  th,td { padding: 0.5em; border: 0.1em solid $black; }
+  td { text-align: left; }
+
+  th[scope="row"] { font-weight: normal; }
+  th[scope="rowgroup"] { vertical-align: middle; }
+  th[scope="row"],
+  th[scope="rowgroup"] { text-align: left; }
+
+  tbody tr:nth-of-type(even) {
+    background-color: lighten($black, 80%);
+  }
+  tfoot {
+    color: $white;
+    font-size: 75%;
+    background-color: $black;
+
+    td { text-align: center; }
+  }
+}

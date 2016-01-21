@@ -1,0 +1,36 @@
+// =====================================
+// Mixins used in your theme. 
+// =====================================
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; } 
+}
+
+@mixin MQ($point) {
+  @if $point == L {
+    @media (min-width: 801px) { @content; }
+  }
+  @else if $point == MtoL {
+    @media (min-width: 501px) and (max-width: 800px) { @content; }
+  }
+  @else if $point == M {
+    @media (max-width: 800px) { @content; }
+  }
+  @else if $point == S {
+    @media (max-width: 500px) { @content; }
+  }
+}
+
+@mixin font-smoothing($value: on) {
+  @if $value == on {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
